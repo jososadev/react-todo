@@ -1,0 +1,33 @@
+.row {
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checked {
+    background-color: #888;
+}
+
+.row:hover {
+    background-color: #ddd;
+}
+
+.checked:hover {
+    background-color: #888;
+}
+
+.close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    padding: 5px;
+}
+
+.close:hover {
+    background-color: gray;
+}

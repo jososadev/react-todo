@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { ItemRow, NewItem } from './components'
+import useTodo from './hooks'
+
 function App() {
+  const { todo, createNewItem, updateItem, deleteItem } = useTodo()
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>REACT - TODO APP</h1>
+      <div>
+        <NewItem createNewItem={createNewItem} />
+        <div className="list">
+          {!todo.length && <p>NO ITEMS ADDED</p>}
+          {todo.map((item, index) => {
+            return (
+              <ItemRow item={item} index={index} updateItem={updateItem} deleteItem={deleteItem} />
+            )
+          })}
+        </div>
+      </div>
     </div>
   );
 }
