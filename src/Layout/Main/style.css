@@ -1,0 +1,23 @@
+.menu {
+    background-color: gray;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 100px;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.main-layout {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grow {
+    flex-grow: 1;
+}
