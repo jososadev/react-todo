@@ -3,7 +3,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
 
-import { Home, Todo } from './pages'
+import { Home, Todo, Calculator } from './pages'
 
 const router = createBrowserRouter([
   {
@@ -13,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: "/todo",
     element: <Todo />,
+  },
+  {
+    path: "/calculator",
+    element: <Calculator />,
   },
 ]);
 

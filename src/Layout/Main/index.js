@@ -11,6 +11,9 @@ const Menu = () => {
             <div>
                 <div><Link to="/todo">TODO</Link></div>
             </div>
+            <div>
+                <div><Link to="/calculator">CALCULATOR</Link></div>
+            </div>
         </div>
     )
 }
